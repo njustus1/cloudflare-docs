@@ -1,11 +1,12 @@
 ---
 pcx_content_type: Concept
 title: Account Abuse Protection (Early Access)
-description: Detect and block automated abuse on login and registration endpoints.
+description: Investigate and mitigate account takeover and fake account creation across your login and signup activity.
 products:
   - bots
 tags:
   - Account takeover
+  - Fake account creation
 sidebar:
   order: 8
   label: Account Abuse Protection
@@ -17,16 +18,18 @@ sidebar:
 import { Render, Description, DashButton, Steps } from "~/components";
 
 <Description>
-	Identify and mitigate attacks on your customer and user accounts.
+Investigate and mitigate attacks on your customer and user accounts.
 </Description>
 
-Account abuse — bulk account creation and account takeover attacks — can cause financial losses and erode user trust. Fraud detection allows you to detect and mitigate these attacks among your traffic. You can use fraud signals to [update or create new rules](/waf/custom-rules/) for suspicious account activity, or pass signals to your origin to integrate into authentication and authorization systems.
+Account abuse — bulk account creation and account takeover attacks — can cause financial losses and erode user trust. Fraud detection allows you to detect and mitigate these attacks among your traffic. You can use fraud signals to [update or create new rules](/waf/custom-rules/) for suspicious account activity, or pass signals to your origin to integrate into authentication and authorization systems. Account Abuse Protection builds an overview of each account from the login and signup activity Cloudflare observes at the edge. Because this history accumulates over time, it provides context for an account's typical behavior.
 
 ## Availability
 
 Account Abuse Protection is available in Early Access for any [Bot Management Enterprise](/bots/get-started/bot-management) customer. You can use these features at no additional cost for a limited period until they are generally available.
 
 Contact your Cloudflare account team to request access.
+
+Access to Account Abuse Protection is controlled by two account roles. Refer to [Roles](#roles) for more information.
 
 ---
 
